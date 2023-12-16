@@ -474,7 +474,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>لیست محل کار</h1>
+            <!-- <h1>لیست محل کار</h1> -->
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-left">
@@ -488,95 +488,38 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
+      <form>
         <div class="row">
-          <div class="col-md-6">
-            <!-- AREA CHART -->
-            <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">نمودار منطقه‌ای</h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="chart">
-                  <canvas id="areaChart" style="height:250px"></canvas>
-                </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
-            <!-- DONUT CHART -->
-            <div class="card card-danger">
-              <div class="card-header">
-                <h3 class="card-title">نمودار حلقه‌ای</h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                </div>
-              </div>
-              <div class="card-body">
-                <canvas id="pieChart" style="height:250px"></canvas>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
+          <div class="col">
+            <h6>نام محل کار:</h6>
+            <input type="text" class="form-control" placeholder="">
           </div>
-          <!-- /.col (LEFT) -->
-          <div class="col-md-6">
-            <!-- LINE CHART -->
-            <div class="card card-info">
-              <div class="card-header">
-                <h3 class="card-title">نمودار خطی</h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="chart">
-                  <canvas id="lineChart" style="height:250px"></canvas>
-                </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
-            <!-- BAR CHART -->
-            <div class="card card-success">
-              <div class="card-header">
-                <h3 class="card-title">نمودار ستونی</h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="chart">
-                  <canvas id="barChart" style="height:230px"></canvas>
-                </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
+          <div class="col">
+            <h6>شماره تلفن محل کار:</h6>
+            <input type="text" class="form-control" placeholder="">
           </div>
-          <!-- /.col (RIGHT) -->
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </form>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <h6>شهر:</h6>
+            <!-- <label for="inputCity">شهر:</label> -->
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-6">
+            <h6>استان:</h6>
+            <!-- <label for="inputState">استان</label> -->
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+        </div>
+        <div class="form-group">
+          <h6>آدرس دقیق:</h6>
+          <!-- <label for="inputAddress">آدرس دقیق:</label> -->
+          <input type="text" class="form-control" id="inputAddress" >
+        </div>
+        <button type="submit" class="btn btn-primary">ثبت</button>
+      </form>
     </section>
     <!-- /.content -->
   </div>
