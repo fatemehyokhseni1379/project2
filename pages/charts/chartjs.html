@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>پنل مدیریت | محل کار </title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -487,6 +488,7 @@
     </section>
 
     <!-- Main content -->
+
     <section class="content">
       <form>
         <div class="row">
@@ -498,6 +500,160 @@
             <h6>شماره تلفن محل کار:</h6>
             <input type="text" class="form-control" placeholder="">
           </div>
+    <!-- <section class="content"> -->
+      <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+       
+        <body>
+        
+        <h3>ثبت محل کار جدید</h3>
+        
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">اسم محل کار:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">شماره تلفن محل کار :</label>
+            <input type="number" id="lname" name="phonenumber" placeholder="Your Phonenumber..">
+
+            <label for="ostan">استان :</label>
+            <input type="ostan" id="ostan" name="ostan" placeholder="Your state ..">
+            
+            <label for="shahr">شهر:</label>
+            <input type="shahr" id="shahr" name="shahr" placeholder="Your City ..">
+            <!-- <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option> -->
+            </select>
+        
+            <label for="subject">آدرس دقیق:</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        
+       
+      <!-- <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6"> -->
+            <!-- AREA CHART -->
+            <!-- <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">نمودار منطقه‌ای</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart">
+                  <canvas id="areaChart" style="height:250px"></canvas>
+                </div>
+              </div> -->
+              <!-- /.card-body -->
+            <!-- </div> -->
+            <!-- /.card -->
+
+            <!-- DONUT CHART -->
+            <!-- <div class="card card-danger">
+              <div class="card-header">
+                <h3 class="card-title">نمودار حلقه‌ای</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <canvas id="pieChart" style="height:250px"></canvas>
+              </div> -->
+              <!-- /.card-body -->
+            <!-- </div> -->
+            <!-- /.card -->
+
+          <!-- </div> -->
+          <!-- /.col (LEFT) -->
+           <!-- <div class="col-md-6"> -->
+            <!-- LINE CHART -->
+            <!-- <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">نمودار خطی</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart">
+                  <canvas id="lineChart" style="height:250px"></canvas>
+                </div>
+              </div> -->
+              <!-- /.card-body -->
+            <!-- </div> -->
+            <!-- /.card -->
+
+            <!-- BAR CHART -->
+            <!-- <div class="card card-success">
+              <div class="card-header">
+                <h3 class="card-title">نمودار ستونی</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart">
+                  <canvas id="barChart" style="height:230px"></canvas>
+                </div>
+              </div> -->
+              <!-- /.card-body -->
+            <!-- </div> -->
+            <!-- /.card -->
+
+          <!-- </div>  -->
+          <!-- /.col (RIGHT) -->
+>>>>>>> 6cbf577af2153f3543206531ebe426996b85b59b
         </div>
       </form>
       <form>
@@ -757,3 +913,7 @@
 </script>
 </body>
 </html>
+</style>
+</body>
+</html>
+
